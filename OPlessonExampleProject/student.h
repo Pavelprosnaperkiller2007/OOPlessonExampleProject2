@@ -8,6 +8,7 @@ private:
 	string surname;
 	int age;
 	float avg_mark;
+
 public:
 
 
@@ -50,6 +51,43 @@ public:
 
 	~Student() {
 		cout << "destructor" << endl;
+	}
+
+	string getName() {
+		return name;
+	}
+
+	void setName(string n) {
+		name = n;
+	}
+
+	string getSurname() {
+		return surname;
+	}
+
+	void setSurname(string n) {
+		surname = n;
+	}
+	
+	int getAge() {
+		return age;
+	}
+
+	void setAge(int a) {
+		if (a > 0 && a < 110) {
+			age = a;
+		}
+
+	}
+
+	float getAvgMark() {
+		return avg_mark;
+	}
+
+	void setAvgMark(float mark) {
+		if (mark >= 0 && mark <= 10) {
+
+		}
 	}
 
 	void clear() {
