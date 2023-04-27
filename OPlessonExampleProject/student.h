@@ -13,97 +13,42 @@ public:
 
 
 	// default constructor
-	Student() {
-		cout << "default constructor" << endl;
-		name = "no name";
-		surname = "no surname";
-		age = 15;
-		avg_mark = 4;
-	}
-
+	Student();
 	// constructor with arguments
-	Student(string nm, string surnm, int a, float mark) {
-		cout << "constructor with arguments" << endl;
-		name = nm;
-		surname = surnm;
-		age = a;
-		avg_mark = mark;
-	}
-
+	Student(string nm, string surnm, int a, float mark);
 	// constructor with arguments
-	Student(string nm, string surnm) {
-		cout << "constructor with arguments" << endl;
-		name = nm;
-		surname = surnm;
-		age = 15;
-		avg_mark = 4;
-	}
+	Student(string nm, string surnm);
+
 
 	// copy-constructor
-	Student(const Student& student) {
-		cout << "copy-constructor" << endl;
-		name = student.name;
-		surname = student.surname;
-		age = student.age;
-		avg_mark = student.avg_mark;
-	}
+	Student(const Student& student);
 
 
-	~Student() {
-		cout << "destructor" << endl;
-	}
-
-	string getName() {
-		return name;
-	}
-
-	void setName(string n) {
-		name = n;
-	}
-
-	string getSurname() {
-		return surname;
-	}
-
-	void setSurname(string n) {
-		surname = n;
-	}
+	~Student();
 	
-	int getAge() {
-		return age;
-	}
 
-	void setAge(int a) {
-		if (a > 0 && a < 110) {
-			age = a;
-		}
+	string getName();
+	void setName(string n);
 
-	}
+	string getSurname();
+	
 
-	float getAvgMark() {
-		return avg_mark;
-	}
+	void setSurname(string n);
+	
+	
+	int getAge();
+		
+	
 
-	void setAvgMark(float mark) {
-		if (mark >= 0 && mark <= 10) {
+	void setAge(int a);
 
-		}
-	}
 
-	void clear() {
-		name = "no name";
-		surname = "no surname";
-		age = 0;
-		avg_mark = 0;
-	}
 
-	string convert() {
-		string msg = "";
-		msg += name;
-		msg += " " + surname;
-		msg += " ( age = " + to_string(age);
-		msg += ", average mark = " + to_string(avg_mark);
-		msg += ")";
-		return msg;
-	}
+		float getAvgMark();
+	void setAvgMark(float mark);
+
+		void clear();
+
+		string convert();
+	
 };
