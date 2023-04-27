@@ -18,37 +18,18 @@ public:
 	Student(string nm, string surnm, int a, float mark);
 	// constructor with arguments
 	Student(string nm, string surnm);
-
-
 	// copy-constructor
 	Student(const Student& student);
-
-
 	~Student();
-	
-
 	string getName();
 	void setName(string n);
-
 	string getSurname();
-	
-
-	void setSurname(string n);
-	
-	
+	void setSurname(string n);	
 	int getAge();
-		
-	
-
 	void setAge(int a);
-
-
-
-		float getAvgMark();
-	void setAvgMark(float mark);
-
+	float getAvgMark();
+void setAvgMark(float mark);
 		void clear();
-
 		string convert();
 	
 };
