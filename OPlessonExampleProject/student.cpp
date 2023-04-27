@@ -1,4 +1,4 @@
-
+#include "student.h";
 // default constructor
 Student() {
 	cout << "default constructor" << endl;
