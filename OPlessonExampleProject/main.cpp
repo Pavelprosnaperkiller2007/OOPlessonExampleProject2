@@ -2,9 +2,9 @@
 
 int main() {
 	Student st;
-	student ts1("ivan " "ivanov");
+	Student ts1("ivan", "ivanov");
 
-	st.age = -15;
+	st.setAge(10);
 
 	cout << st.convert() << endl;
 
